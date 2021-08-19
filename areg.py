@@ -19,8 +19,10 @@ _ | prints a system dependent newline
 
 import sys
 
+# Set to True if debug logging must be enabled (prints every executed command)
 DEBUG = False
 
+# Max value for a register
 BYTE_MAX = (1<<8) - 1
 
 # All commands as numbers
@@ -375,7 +377,7 @@ tape_length = int(input("Tape length (128 recommended): "))
 
 if DEBUG:
     input("Debug mode: press enter to start")
-    
+
 run(code, tape_length)
 
 

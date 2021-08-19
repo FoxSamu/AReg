@@ -1,7 +1,7 @@
-# Program to print the fibonacci sequence up to 144
-
-# set mem 0 to the amount of fibonacci numbers to print, which is 10 in this case
-++++++++++
+# set mem 0 to the amount of fibonacci numbers to print, minus 2
+# 12 numbers in this case, so set to 10
++++++ 5
++++++ 10
 
 # set mem 2 and mem 3 to 1
 # preserve mem 1 as 0 so that we can use a loop to get the pointer back to mem 1
@@ -31,5 +31,8 @@
     <[<]<- # return to mem 0 and decrement
 ]
 
-^;++++++++++++++++++++++++++++++++^ # Store mem 0 (which is 0) in AReg, then increment to 32 (whitespace character)
->>[!>^.^]                           # Print the entire sequence
+# Store mem 0 (which is 0) in AReg, then increment to 32 (whitespace)
+^;++++++++++++++++++++++++++++++++^ 
+
+# Print the entire sequence
+>>[!>^.^]
