@@ -34,8 +34,8 @@ This program prints the Fibonacci sequence up to 144, separated by whitespaces.
 
 For an explanation, see [examples/fibonacci.areg](examples/fibonacci.areg).
 
-### Hello world, in Brainfuck
-This program prints `Hello World!
+### Hello world!
+This program prints `Hello World!` with a newline. Almost the same as Brainfuck, except it uses the `_` instruction to print a system dependent newline.
 
 ```
 ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>-[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+._
